@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!--
+Ai oot kova coodaus-uggo tai -agga vai? :----D
+                                                                                                     
+                           `:+oosssso/-             .-------------.                                 
+                 `-/shddhhhhyo///::/+shdds.+yyyhhddhhssssssssssssyhddho-                            
+             .oyddmmmdddyyso/-----------:mMy/--::::::::--------------:odmy/.                        
+         `+hmhs::------:/+oshmh:------:yNddhhhhhhhhhhhdmhyo/------------:/sdmy:                     
+      :sdmyo+oooooo+/--------------:sdmy/++++++/:-------:+ohmy---------------+hNs:                  
+    `yMmmmhysooooooshmdyo/:-------:dMMdhhysssssyhdmhyo::-----------------------:+Ny                 
+   `mmyo:-------------:+symms:---oNhs:-------------:+yhmdhs++:-------------------/mh.               
+   :Mo---------------------/hmooNmo----------------------/+syy---------------------yN.              
+    Ny-----------------------//s+--------------------------------------------------:dd`             
+    oM:-----/sss+----------------------:+++:----------------------------------------:dd.            
+   +No-----hMMMMMd:------------------:yMMMMMh:---------------------------------------:hN-           
+  .Mo------MMMMMMM/------------------+MMMMMMMs-----------------------------------------sNo          
+  .M+------+mMMMNo-------------------:mMMMMMN/------------------------------------------/dd-        
+   oNo-------:::----------------------:oyyyo:---------------------------------------------oNo`      
+    +M+------------------------------------------------------------------------------------:hm+     
+     sN--------------------------------------------------------------------------------------+Ny`   
+     hm---------------------------------------------------------------------------------------:md   
+     Ns----------------------------------------------------------------------------------------/M:  
+    oMo-------------------------------....```````                `:dms/-------------------------ms  
+ `+hms`       ```...------------..``                                .+My------------------------ms  
+ om-                   `+hhhNs.                                      /M+------------------------No  
+ oN:.                   dMMMMMNy`                                  `+Ny------------------------hN.  
+ `+ymmy+/:....        ./yMMMMMMMs                                -omh/------------------------/M:   
+      -/+dMdhMNdhhyyhhho:-:ssshNy/-                           -oddo:--------------------------hm    
+         .Ms-hN//M+`````````````:oyhdhyyo//-.`          .-/+sddo/----------------------------oM:    
+          hd--md:oM:```````````````````-:/+sshhdmdmhdhhhhys+/:------------------------------/No     
+          sm:-:Nh-oM/`````````````````````````.Ny:Mo---------------------------------------+Ns      
+          .M+--/Nh:oNo```````````````````````:mh:+M+--------------------------------------oM+       
+           mm:--:md++dm:````````````````````oNs-+my-------------------------------------:yN/        
+           -MN:---oNh++hmo.````````````-/osNh/-hN+------------------------------------:oNy.         
+            :dN+----omd+/sddyso+ooyyhmhhoo/:/yNh/-----------------------------------:smh-           
+             `:Nh:----+dms/::/+++++/+oohhhdmhs:----------------------------------:odms.             
+               :mh/:----:shhhhhhhhyyso+/--:-----------------------------------:sdds.                
+                 +sddhyo+/:----------------------------------------------:/oymho.                   
+                     .-++syyhyhdhdhhhhssssssssssssssoo+++++++++++ooooshdhhy+-`                      
+                                     .-------------::/+++++++++++/::::.   
+
+by d-tail @ IRCnet
+-->
+
+<html>
+  <head>
+    <title>ATK-YTP TJ-laskuri</title>
+    <meta name="description" content="Aikaa ATK-YTP:n alkuun on...">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
+    <style>
+
+      @-webkit-keyframes tick {
+        0% { -webkit-transform: scale(1.5); opacity: 0; }
+        100% { -webkit-transform: scale(1); opacity: 1; }
+      }
+      @-moz-keyframes tick {
+        0% { -moz-transform: scale(1.5); opacity: 0; }
+        100% { -moz-transform: scale(1); opacity: 1; }
+      }
+      @-ms-keyframes tick {
+        0% { -ms-transform: scale(1.5); opacity: 0; }
+        100% { -ms-transform: scale(1); opacity: 1; }
+      }
+      @keyframes tick {
+        0% { transform: scale(1.5); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      h1 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        text-shadow: 0 0 0.25em #fff;
+        font-weight: 700;
+        font-size: 2.5em;
+      }
+      .timer-field-val {
+        -webkit-animation: tick 600ms ease-out;
+        -moz-animation: tick 600ms ease-out;
+        -ms-animation: tick 600ms ease-out;
+        animation: tick 600ms ease-out;
+        font-weight: 700;
+        color: #fff;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        font-family: Oswald, sans-serif;
+        font-weight: 300;
+        background: #000 url('jallu.jpg') no-repeat center center;
+        background-size: cover;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      body:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+      }
+      .field {
+        font-size: 2em;
+        text-align: center;
+        line-height: 1.5em;
+      }
+      #timer {
+        position: absolute;
+        top: 50%;
+        margin-top: -8em;
+        width: 100%;
+        text-shadow: 0 0 0.25em #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="timer">
+      <h1 id="title">#atk-ytp</h1>
+      <div class="field"><span id="days"></span> päivää</div>
+      <div class="field"><span id="hours"></span> tuntia</div>
+      <div class="field"><span id="minutes"></span> minuuttia</div>
+      <div class="field"><span id="seconds"></span> sekuntia</div>
+    </div>
+    <script>
+      $(function() {
+        var targetTimes = [
+          {date: new Date('October 19, 2022 11:00:00'), title: 'ATK-YTP @ Kuopijo'},
+          {date: new Date('October 21, 2022 12:00:00'), title: 'Savolax siedettävä'},
+          {date: new Date("October 18, 2023 12:00:00"), title: "Joe's Zoo"}
+        ]
+
+        var elements = {
+          days: $('#days'),
+          hours: $('#hours'),
+          minutes: $('#minutes'),
+          seconds: $('#seconds'),
+          title: $('#title')
+        }
+
+        function checkReplace(el, val) {
+          val = '' + val
+          if(el.text() != val) {
+            el.html('<span class="timer-field-val">'+val+'</span>')
+          }
+        }
+
+        function tick() {
+          var now = new Date()
+
+          var targetTime = targetTimes[targetTimes.length]
+          for(var i = targetTimes.length-1; i >= 0; i--) {
+            if(targetTimes[i].date > now) {
+              targetTime = targetTimes[i]
+            }
+          }
+          var diff = targetTime.date - now
+
+          var rnd = (diff > 0) ? Math.floor : Math.ceil
+
+          var totalSeconds = diff/1000
+          var days = rnd(totalSeconds/86400)
+          var hours = rnd((totalSeconds % 86400) / 3600)
+          var minutes = rnd((totalSeconds % 3600) / 60)
+          var seconds = rnd(totalSeconds % 60)
+
+          checkReplace(elements.days, days)
+          checkReplace(elements.hours, hours)
+          checkReplace(elements.minutes, minutes)
+          checkReplace(elements.seconds, seconds)
+          if(elements.title.text() !== targetTime.title) {
+            elements.title.text(targetTime.title)
+          }
+        }
+
+        setInterval(tick, 1000)
+        tick()
+      })
+    </script>
+  </body>
+</html>
+
