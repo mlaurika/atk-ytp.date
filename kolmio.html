@@ -133,11 +133,12 @@ by d-tail @ IRCnet
       <div class="field"><span id="hours"></span> tuntia</div>
       <div class="field"><span id="minutes"></span> minuuttia</div>
       <div class="field"><span id="seconds"></span> sekuntia</div>
-      <video controls loop autoplay>
+      <video autoplay muted playsinline loop>
           <source src="kolmio.webm" type="video/webm">
       </video>
     </div>
     <script>
+      document.querySelector('video').play();
       $(function() {
         var targetTimes = [
           {date: new Date("October 18, 2023 12:00:00"), title: "Joe's Zoo"}
