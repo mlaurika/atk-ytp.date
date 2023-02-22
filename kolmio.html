@@ -127,12 +127,10 @@ by d-tail @ IRCnet
     </style>
   </head>
   <body>
-    <div id="tarra">
-         <video controls loop>
-             <source src="kolmio.webm" type="video/webm">
-      </video>
-    </div>
     <div id="timer">
+      <video controls loop>
+          <source src="kolmio.webm" type="video/webm">
+      </video>
       <h1 id="title">Kolmiocounter</h1>
       <div class="field"><span id="days"></span> päivää</div>
       <div class="field"><span id="hours"></span> tuntia</div>
@@ -142,8 +140,6 @@ by d-tail @ IRCnet
     <script>
       $(function() {
         var targetTimes = [
-          {date: new Date('October 19, 2022 11:00:00'), title: 'ATK-YTP @ Kuopijo'},
-          {date: new Date('October 21, 2022 12:00:00'), title: 'Savolax siedettävä'},
           {date: new Date("October 18, 2023 12:00:00"), title: "Joe's Zoo"}
         ]
 
