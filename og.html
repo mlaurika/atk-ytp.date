@@ -46,7 +46,7 @@ by d-tail @ IRCnet
 <html>
   <head>
     <title>ATK-YTP TJ-laskuri</title>
-    <meta name="description" content="Aikaa kolmio alkuun on...">
+    <meta name="description" content="Aikaa ATK-YTP:n alkuun on...">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
@@ -124,37 +124,23 @@ by d-tail @ IRCnet
         width: 100%;
         text-shadow: 0 0 0.25em #000;
       }
-      .kolmio {
-	  margin: auto;
-          width: 50%;
-      }
-	video {
-		display: block;
-		margin: 0 auto;
-	}
     </style>
   </head>
   <body>
     <div id="timer">
-      <h1 id="title">Kolmiocounter</h1>
+      <h1 id="title">#atk-ytp</h1>
       <div class="field"><span id="days"></span> päivää</div>
       <div class="field"><span id="hours"></span> tuntia</div>
       <div class="field"><span id="minutes"></span> minuuttia</div>
       <div class="field"><span id="seconds"></span> sekuntia</div>
-      <div id="kolmio">
-         <video autoplay muted playsinline loop>
-             <source src="kolmio.webm" type="video/webm">
-         </video>
-      </div>
     </div>
     <script>
-      document.querySelector('video').play();
       $(function() {
         var targetTimes = [
-			{date: new Date("October 16 2024, 10:30:00"), title: "JyvääsKylä"},
-			{date: new Date("October 18 2024, 12:00:00"), title: "Kylässä Jyvässä"},
-			{date: new Date("October 15 2025, 10:30:00"), title: "Tanpere"}
-		    ]
+          {date: new Date('October 19, 2022 11:00:00'), title: 'ATK-YTP @ Kuopijo'},
+          {date: new Date('October 21, 2022 12:00:00'), title: 'Savolax siedettävä'},
+          {date: new Date("October 18, 2023 12:00:00"), title: "Joe's Zoo"}
+        ]
 
         var elements = {
           days: $('#days'),
